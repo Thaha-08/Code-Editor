@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codelit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="head">
+      <div class="logo"><i class="bx bx-cube">_</i></div>
+      <h1>codeitt</h1>
+      <div class="logo">_<i class="bx bx-cube"></i></div>
+    </section>
+
+    <section class="container">
+      <div class="editor">
+        <div class="left">
+          <label>HTML</label><i class="bx bxl-html5"></i>
+          <textarea onkeyup="run()" spellcheck="false" id="html-code">
+          </textarea>
+
+          <label>CSS</label><i class="bx bxl-css3"></i>
+          <textarea onkeyup="run()" spellcheck="false" id="css-code">
+          </textarea>
+
+          <label>JAVASCRIPT</label><i class="bx bxl-nodejs"></i>
+          <textarea onkeyup="run()" spellcheck="false" id="js-code"> </textarea>
+        </div>
+
+        <diiv class="right">
+          <label>OUTPUT</label><i class="bx bx-play"></i>
+          <iframe id="output"></iframe>
+        </diiv>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
